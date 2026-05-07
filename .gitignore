@@ -9,4 +9,3 @@ fixtures
 /Requirement/*.json
 __pycache__
 debug.log
-*.dat
