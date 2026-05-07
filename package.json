@@ -1,0 +1,34 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prepare": "python -m pip install -r requirements.txt",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "code:gen": "node ./Lib/script/generalCode/index.js",
+    "config:t": "node ./Lib/script/generalTConfig.js",
+    "test:import": "node ./Lib/script/importReqToTest.js",
+    "test:run": "node ./Lib/script/executeTest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "axios": "^1.12.2",
+    "blob-polyfill": "^9.0.20240710",
+    "crypto-js": "^4.2.0",
+    "execa": "^9.6.0",
+    "js-md5": "^0.8.3",
+    "node-fetch": "^3.3.2",
+    "pixelmatch": "^7.1.0",
+    "pngjs": "^7.0.0",
+    "qs": "^6.14.0",
+    "sharp": "^0.34.2",
+    "ssim.js": "^3.5.0",
+    "turndown": "^7.2.1",
+    "xlsx": "^0.18.5"
+  }
+}

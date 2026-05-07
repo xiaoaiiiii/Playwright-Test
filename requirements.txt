@@ -1,0 +1,5 @@
+Flask==2.2.2
+Flask-Cors==3.0.10
+pywebview==5.4
+Nuitka==2.7.10
+flask_sock==0.7.0

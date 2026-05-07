@@ -1,0 +1,12 @@
+
+node_modules
+
+/test-results
+/report
+/TestReports
+log_py.txt
+fixtures
+/Requirement/*.json
+__pycache__
+debug.log
+*.dat
