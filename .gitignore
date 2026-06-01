@@ -9,3 +9,6 @@ fixtures
 /Requirement/*.json
 __pycache__
 debug.log
+
+# 登录态（本地凭证，禁止提交）
+/Configurations/storageState.json

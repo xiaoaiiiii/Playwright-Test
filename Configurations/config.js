@@ -10,13 +10,13 @@ export default {
   Branch: "1.0.4",
 };
 // 测试案例的地址
-export const e2ePath = "D:/test-project/TEST-SUITE/playwright-test/Packages";
+export const e2ePath = "./Packages";
 
 // 测试下项目启动地址
 export const projectPath =
-  "D:/test-project/TestApp/TestApp/TestApp.exe";
+  "https://pms-pre.tgate.woa.com/pmsx/#/task-management/task-management/flow-progress";
 // 测试下项目启动地址
-// export const projectPath = "https://test-app-t.testapp.example.cn/#/dvms/bom"; // 网页
+// export const projectPath = "D:/test-project/TestApp/TestApp/TestApp.exe"; // 启动程序
 // export const projectPath = "D:/project/project-backend/AppBackend.py"; // 启动文件
 // export const projectPath = "D:/programFiles/APPPROJ/APPPROJ/APPPROJ.exe"; // 启动程序
 // export const projectPath = "D:/project/sim-tool/backend/SimTool.py"; // 启动文件

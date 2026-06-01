@@ -4,13 +4,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "prepare": "python -m pip install -r requirements.txt",
+    "prepare": "(command -v python3 >/dev/null 2>&1 && python3 -m pip install -r requirements.txt) || (command -v python >/dev/null 2>&1 && python -m pip install -r requirements.txt) || echo 'skip: python not found, requirements.txt not installed'",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
-    "code:gen": "node ./Lib/script/generalCode/index.js",
-    "config:t": "node ./Lib/script/generalTConfig.js",
-    "test:import": "node ./Lib/script/importReqToTest.js",
-    "test:run": "node ./Lib/script/executeTest.js"
+    "login": "node ./lib/script/login/index.js",
+    "code:gen": "node ./lib/script/generalCode/index.js",
+    "config:t": "node ./lib/script/generalTConfig.js",
+    "test:import": "node ./lib/script/importReqToTest.js",
+    "test:run": "node ./lib/script/executeTest.js"
   },
   "author": "",
   "license": "ISC",
