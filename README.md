@@ -30,18 +30,18 @@
   - `npm run test`
 - 可视化测试
   - `npm run test:ui`
-- 生成 PROJ-T 测试配置
+<!-- - 生成 PROJ-T 测试配置
   - `npm run config:t`
 - PROJ-C 执行测试
-  - `npm run test:run`
-- 登录获取/续签登录态（首次使用 / token 过期 / 切账号时执行）
+  - `npm run test:run` -->
+- 登录获取/续签登录态
   - `npm run login`
 - 录制脚本
   - `npm run code:gen`
   - 同时启动 Flask 后端 + pywebview 录制 UI（左侧文件树/右侧代码栏）+ Playwright 录制浏览器
   - 应急绕过：如果 pywebview UI 在某些环境下起不来，可以 `CODEGEN_NO_GUI=1 npm run code:gen` 仅起 Flask + Playwright 浏览器进行排查
-- 需求文档转测试用例
-  - `npm run test:import`
+<!-- - 需求文档转测试用例
+  - `npm run test:import` -->
 
 
 

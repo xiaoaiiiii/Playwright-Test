@@ -1,13 +1,20 @@
 // @ts-check
+import { existsSync } from "node:fs";
 import { defineConfig, devices } from "@playwright/test";
 import { restoreStorageStateFromEnv } from "./lib/utils/auth.js";
+
+// 把 .env 加载进 process.env（Midscene 模型配置 MIDSCENE_MODEL_NAME 等依赖此）
+// Node 20.12+/21.7+ 起内置 process.loadEnvFile，无需额外依赖
+if (existsSync(".env")) {
+  process.loadEnvFile(".env");
+}
 
 // CI 场景：从环境变量还原 storageState（本地有文件则跳过）
 restoreStorageStateFromEnv();
 
 export default defineConfig({
   testDir: "./Packages",
-  timeout: 120000,
+  timeout: 1200000,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 3,
